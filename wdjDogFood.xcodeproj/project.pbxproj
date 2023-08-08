@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		6F590A682A806632005664AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F590A672A806632005664AB /* AppDelegate.swift */; };
 		6F590A6A2A806632005664AB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F590A692A806632005664AB /* SceneDelegate.swift */; };
-		6F590A6C2A806632005664AB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F590A6B2A806632005664AB /* ViewController.swift */; };
 		6F590A6F2A806632005664AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F590A6D2A806632005664AB /* Main.storyboard */; };
 		6F590A712A806635005664AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F590A702A806635005664AB /* Assets.xcassets */; };
 		6F590A742A806635005664AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F590A722A806635005664AB /* LaunchScreen.storyboard */; };
+		6F590A802A80675C005664AB /* dogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F590A7F2A80675C005664AB /* dogViewController.swift */; };
+		6F590A822A806907005664AB /* foodDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F590A812A806907005664AB /* foodDefinition.swift */; };
+		6F590A842A806FB2005664AB /* foodData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F590A832A806FB2005664AB /* foodData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6F590A642A806632005664AB /* wdjDogFood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wdjDogFood.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F590A672A806632005664AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6F590A692A806632005664AB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		6F590A6B2A806632005664AB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6F590A6E2A806632005664AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6F590A702A806635005664AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6F590A732A806635005664AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6F590A752A806635005664AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F590A7F2A80675C005664AB /* dogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dogViewController.swift; sourceTree = "<group>"; };
+		6F590A812A806907005664AB /* foodDefinition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = foodDefinition.swift; sourceTree = "<group>"; };
+		6F590A832A806FB2005664AB /* foodData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = foodData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,41 @@
 		6F590A662A806632005664AB /* wdjDogFood */ = {
 			isa = PBXGroup;
 			children = (
+				6F590A7E2A806706005664AB /* View controllers */,
+				6F590A7C2A80667F005664AB /* Views */,
+				6F590A7B2A806647005664AB /* Models */,
 				6F590A672A806632005664AB /* AppDelegate.swift */,
 				6F590A692A806632005664AB /* SceneDelegate.swift */,
-				6F590A6B2A806632005664AB /* ViewController.swift */,
 				6F590A6D2A806632005664AB /* Main.storyboard */,
 				6F590A702A806635005664AB /* Assets.xcassets */,
 				6F590A722A806635005664AB /* LaunchScreen.storyboard */,
 				6F590A752A806635005664AB /* Info.plist */,
 			);
 			path = wdjDogFood;
+			sourceTree = "<group>";
+		};
+		6F590A7B2A806647005664AB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6F590A812A806907005664AB /* foodDefinition.swift */,
+				6F590A832A806FB2005664AB /* foodData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6F590A7C2A80667F005664AB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6F590A7E2A806706005664AB /* View controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6F590A7F2A80675C005664AB /* dogViewController.swift */,
+			);
+			path = "View controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +168,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6F590A6C2A806632005664AB /* ViewController.swift in Sources */,
+				6F590A802A80675C005664AB /* dogViewController.swift in Sources */,
 				6F590A682A806632005664AB /* AppDelegate.swift in Sources */,
+				6F590A842A806FB2005664AB /* foodData.swift in Sources */,
 				6F590A6A2A806632005664AB /* SceneDelegate.swift in Sources */,
+				6F590A822A806907005664AB /* foodDefinition.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
