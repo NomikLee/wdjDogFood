@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-
+// 定義了不同品牌的飼料資料列表
 var dogFoodArray: [DogFoodDefinition] = [
     DogFoodDefinition(foodBrand: "ACANA愛肯拿", foodIntroduce: "ACANA是一家高品質的寵物食品品牌，以提供天然、新鮮、優質的食材而聞名。他們的食品配方充滿蛋白質，來自健康的農場和野生捕獲的食材。ACANA的食品不含大豆、穀物和人工添加物，適合各種年齡和體型的狗狗。", foodAveragePrice: 2620, foodImageName: "ACANA"),
     DogFoodDefinition(foodBrand: "Blackwood柏萊富", foodIntroduce: "Blackwood是一個重視寵物健康的品牌，提供平衡營養的食品，幫助寵物保持健康。他們的食品配方結合了優質蛋白質、蔬菜和水果，並添加益生菌來促進消化和免疫系統的健康。Blackwood不使用人工色素、香料和防腐劑，以確保食品的純淨和天然。", foodAveragePrice: 2438, foodImageName: "Blackwood"),

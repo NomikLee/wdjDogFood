@@ -7,6 +7,7 @@
 
 import UIKit
 
+// 定義飼料的資料結構
 struct DogFoodDefinition {
     let foodBrand: String
     let foodIntroduce: String
